@@ -1,3 +1,5 @@
+-- Retrieve the product names and quantities for one of the orders placed.
+
 SELECT 
 	products.product_name, 
 	order_items.quantity 

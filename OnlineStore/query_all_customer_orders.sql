@@ -1,6 +1,8 @@
+-- Retrieve all orders placed by a specific customer (including the ID’s of what was ordered and the quantities).
+
 SELECT 
 	orders.id,
-	orders.id || ' ' || products.id AS order_item_id,
+	orders.id || ' ' || products.id AS order_item_id, --I wasn't sure what you meant by order item id?
 	products.product_name,
 	order_items.quantity 
 FROM order_items
