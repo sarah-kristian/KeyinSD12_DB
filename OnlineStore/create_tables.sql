@@ -24,6 +24,6 @@ CREATE TABLE order_items (
     product_id INT,
     quantity NUMERIC NOT NULL,
 	FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE,
-    FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
+    FOREIGN KEY (product_id) REFERENCES products(id),
     PRIMARY KEY (order_id, product_id)
 );
